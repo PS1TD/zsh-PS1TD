@@ -28,3 +28,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```
 Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
 Relaunch Terminal and go through customization
+
+### Step 5: Plugins
+Set plugins=(git zsh-autosuggestions sudo history) in ~/.zshrc
+Install zsh-autosuggestions
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
