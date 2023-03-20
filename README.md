@@ -1,2 +1,6 @@
-# zsh-PS1TD
-Personally referenced customization checklist for ZSH
+## PS1TD zsh customizations
+
+### Step 1 Install ZSH
+```
+sudo apt install zsh
+```
