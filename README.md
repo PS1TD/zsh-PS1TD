@@ -55,3 +55,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 And others...
+
+### Step 7: Root
+Repeat steps 3,4,5 & 6 while being root
+```
+sudo su
+```
