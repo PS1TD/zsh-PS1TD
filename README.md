@@ -10,12 +10,12 @@ sudo chsh -s $(which zsh)
 Log out and log back in
 Open Terminal and press 2
 
-### Step 2: Install [Fira Code](https://github.com/tonsky/FiraCode) Font
-```
-https://github.com/tonsky/FiraCode
-```
+### Step 2: Fonts
+[Fira Code](https://github.com/tonsky/FiraCode) Font
+[MesloLGS NF](https://github.com/romkatv/powerlevel10k#fonts) Font
+
 After downloading install all ttf fonts
-After installing select Fira Code font to be used by the Terminal
+Set MesloLGS NF to be used by Terminal
 
 ### Step 3: Set up Oh My Zsh
 ```
