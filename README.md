@@ -7,8 +7,6 @@ sudo apt install zsh
 ```
 sudo chsh -s $(which zsh)
 ```
-Log out and log back in
-Open Terminal and press 2
 
 ### Step 2: Fonts
 [Fira Code](https://github.com/tonsky/FiraCode) Font
@@ -21,6 +19,8 @@ Set MesloLGS NF to be used by Terminal
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+Log out and log back in
+Open Terminal and go through set up process
 
 ### Step 4: Set theme to powerlevel10k
 ```
