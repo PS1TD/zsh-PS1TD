@@ -81,6 +81,8 @@ alias mk="microk8s kubectl"
 ### Step 7: Environment Variables
 
 ```
+export KUBE_EDITOR="nano"
+
 # Git
 export GPG_TTY=$(tty)
 
