@@ -76,6 +76,7 @@ curl -fLo ~/.oh-my-zsh/plugins/docker/_docker https://raw.githubusercontent.com/
 ```
 alias k="kubectl"
 alias mk="microk8s kubectl"
+alias gc="gcloud"
 ```
 
 ### Step 7: Environment Variables
