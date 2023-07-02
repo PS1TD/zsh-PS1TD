@@ -64,11 +64,35 @@ Install zsh-autocomplete
   git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 ```
 
-Install docker completion
+Install Docker Completions
 
 ```
 mkdir -p ~/.oh-my-zsh/plugins/docker/
 curl -fLo ~/.oh-my-zsh/plugins/docker/_docker https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker
+```
+
+Install Kubectl Completions
+```
+mkdir -p ~/.oh-my-zsh/custom/plugins/kubectl-autocomplete/
+kubectl completion zsh > ~/.oh-my-zsh/custom/plugins/kubectl-autocomplete/kubectl-autocomplete.plugin.zsh
+```
+```
+# use autocompletion
+autoload -Uz compinit
+compinit
+
+# change according to completions source
+source <(kubectl completion zsh)
+alias k=kubectl
+compdef k=kubectl
+
+# for microk8s kubectl
+microk8s.kubectl() {
+    microk8s kubectl "$@"
+}
+alias mk="microk8s.kubectl"
+compdef microk8s.kubectl=kubectl
+compdef mk=kubectl
 ```
 
 ### Step 6: Aliases
