@@ -20,10 +20,12 @@ echo 'export PATH=$PATH:/home/ps1td/.local/bin' >> ~/.zshrc
 ```
 
 ### Step 3: Fonts
-MesloLGS & Fira Code
+MesloLGS
 ```
 oh-my-posh font install
 ```
+FiraCode
+[Fira Code](https://github.com/tonsky/FiraCode) Font
 
 Set MesloLGS NF to be used by Terminal
 
