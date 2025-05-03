@@ -9,23 +9,28 @@ sudo apt install zsh
 ```
 sudo chsh -s $(which zsh)
 ```
+Log out and log back in or reboot to see changes
 
-### Step 2: Fonts
+### Step 2: Set up Oh My Posh
+```
+curl -s https://ohmyposh.dev/install.sh | bash -s
+```
+```
+echo 'export PATH=$PATH:/home/ps1td/.local/bin' >> ~/.zshrc
+```
 
-[Fira Code](https://github.com/tonsky/FiraCode) Font
-[MesloLGS NF](https://github.com/romkatv/powerlevel10k#fonts) Font
+### Step 3: Fonts
+MesloLGS & Fira Code
+```
+oh-my-posh font install
+```
 
-After downloading install all ttf fonts
 Set MesloLGS NF to be used by Terminal
 
-### Step 3: Set up Oh My Zsh
-
+### Step 4: Set up Oh My Zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-
-Log out and log back in
-Open Terminal and go through set up process
 
 ### Step 4: Set theme to powerlevel10k
 
